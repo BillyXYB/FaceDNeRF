@@ -22,8 +22,6 @@ compared with state-of-the-art 3D face reconstruction and editing methods
 
 ![pipeline](https://github.com/BillyXYB/FDNeRF/assets/49705209/5af0e7fe-806b-4f9a-a68b-092917753496)
 
-## Relight images
-we have provided some illumination functions `getLightIntensity`in the file `./editors/w_plus_editor.py`. If you want to customize you own illumination function, pleace also name it `getLightIntensity` and replace the origial one.
 
 ## Text-Conditioned 3D Editing on Single Image (include other domians)
 https://github.com/BillyXYB/FDNeRF/assets/49705209/a6e9a410-2487-41d5-ab77-23fc6992dff2
@@ -77,7 +75,8 @@ python script.py
 
 Results will be saved to `./output`
 
-
+## Relight images
+we have provided some illumination functions `getLightIntensity`in the file `./editors/w_plus_editor.py`. If you want to customize you own illumination function, pleace also name it `getLightIntensity` and replace the origial one.
 
 ## Paper & Citation
 Link to [**Paper**](https://arxiv.org/abs/2306.00783) 
