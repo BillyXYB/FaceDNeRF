@@ -37,7 +37,7 @@ compared with state-of-the-art 3D face reconstruction and editing methods
 
 We use the same camera pose convention as [eg3d](https://github.com/NVlabs/eg3d), please refer to this [script](https://github.com/NVlabs/eg3d/blob/main/dataset_preprocessing/ffhq/preprocess_in_the_wild.py) that can preprocess in-the-wild images compatible with our camera pose convention.
 
-We also provide test data in the `./projector_test_data`
+We also provide test data in the `./test_data`
 
 ## Download pre-trained models
 1. VGG16 pre-trained model: you can download vgg16.pt from https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/metrics/vgg16.pt and save it to `./network`.
