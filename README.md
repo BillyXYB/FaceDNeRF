@@ -42,9 +42,9 @@ We also provide test data in the `./projector_test_data`
 ## Download pre-trained models
 1. VGG16 pre-trained model: you can download vgg16.pt from https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada-pytorch/pretrained/metrics/vgg16.pt and save it to `./network`.
 2. Since EG3D is the backbone of our model, please download the ffhqrebalanced512-64.pkl by the following command and place it under `./network`.
-
-- `wget --content-disposition 'https://api.ngc.nvidia.com/v2/models/org/nvidia/team/research/eg3d/1/files?redirect=true&path=ffhqrebalanced512-128.pkl' -O ffhqrebalanced512-128.pkl`
-
+```
+wget --content-disposition 'https://api.ngc.nvidia.com/v2/models/org/nvidia/team/research/eg3d/1/files?redirect=true&path=ffhqrebalanced512-128.pkl' -O ffhqrebalanced512-128.pkl
+```
 
 ## Image editing
 The backnone of this implementation is [eg3d](https://github.com/NVlabs/eg3d). For detailed instructions, please refer to the comments in the  `./script.py`
