@@ -76,7 +76,7 @@ python script.py
 Results will be saved to `./output`
 
 ## Relight images
-we have provided some illumination functions `getLightIntensity`in the file `./editors/w_plus_editor.py`. If you want to customize you own illumination function, pleace also name it `getLightIntensity` and replace the origial one.
+we have provided some illumination functions `getLightIntensity`in the file `./editors/w_plus_editor.py`. If you want to customize you own illumination function, pleace also name it `getLightIntensity` and replace the original one.
 
 ## Paper & Citation
 Link to [**Paper**](https://arxiv.org/abs/2306.00783) 
