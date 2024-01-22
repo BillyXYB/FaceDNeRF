@@ -43,7 +43,7 @@ https://github.com/BillyXYB/FDNeRF/assets/49705209/caf123ce-a63a-4692-beed-be685
 ## Requirements
 
 * We recommend Linux for performance and compatibility reasons.
-* 1&ndash;2 high-end NVIDIA GPUs. We have done all testing and development using V100s and RTX3090s.
+* 1&ndash;2 high-end NVIDIA GPUs. We have done all testing and development using V100s, RTX3090s and RTX4090s.
 * 64-bit Python 3.9, cuda11.3, and PyTorch 1.11.0 (or later). See https://pytorch.org for PyTorch install instructions.
 * Since we use the EG3D as our backbone, Please see **[eg3d](https://github.com/NVlabs/eg3d)** official repo for EG3D installation. Or directly install following conda environment.
 * Python libraries: see [environment.yml](./environment.yml) for exact library dependencies.  You can use the following commands with Anaconda3 to create and activate your Python environment:

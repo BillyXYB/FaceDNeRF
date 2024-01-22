@@ -8,9 +8,6 @@
 # without an express license agreement from NVIDIA CORPORATION or
 # its affiliates is strictly prohibited.
 
-##CUDA_VISIBLE_DEVICES="7" python gen_videos_from_given_latent_code.py --outdir=text_relight_video --trunc=0.7 --npy_path "/home/haozhang/disk1/EG3D-diffusion_zh/eg3d/projector_out/relight/00018Big smile0.4 0.5 0.0 0.1 0.0/00018Big smile0.4 0.5 0.0 0.1 0.0.npy"   --network=/disk1/haozhang/EG3D-diffusion_zh/eg3d/networks/ffhqrebalanced512-128.pkl --sample_mult=2
-##CUDA_VISIBLE_DEVICES="7" python gen_videos_from_given_latent_code.py --outdir=text_only_video --trunc=0.7 --npy_path "/home/haozhang/disk1/EG3D-diffusion_zh/eg3d/projector_out/yanbo_uncondition_generation/my_2A black car0.0 0.0 6e-05 0.03/my_2A black car0.0 0.0 6e-05 0.03.npy"  --network=/disk1/haozhang/EG3D-diffusion_zh/eg3d/networks/shapenetcars128-64.pkl --sample_mult=2
-##CUDA_VISIBLE_DEVICES="7" python gen_videos_from_given_latent_code.py --outdir=text_only_video --trunc=0.7 --npy_path "/home/haozhang/disk1/EG3D-diffusion_zh/eg3d/projector_out/catA cat with blue eyes0.0 1.0 8e-05 0.0/catA cat with blue eyes0.0 1.0 8e-05 0.0.npy"  --network=/disk1/haozhang/EG3D-diffusion_zh/eg3d/networks/afhqcats512-128.pkl --sample_mult=2
 
 """Generate lerp videos using pretrained network pickle."""
 
@@ -204,7 +201,6 @@ def gen_interp_video(G, latent, mp4: str,  w_frames=60 * 4, kind='cubic', grid_d
     video_out.close()
     all_poses = np.stack(all_poses)
     camera_rotation = np.array(camera_rotation)
-    np.save("/disk1/haozhang/DPR/camera_rotation.npy",camera_rotation)
     
     if gen_shapes:
         print(all_poses.shape)
