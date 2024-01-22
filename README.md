@@ -72,7 +72,7 @@ The backnone of this implementation is [eg3d](https://github.com/NVlabs/eg3d). F
 python script.py
 ```
 
-Results will be saved to `./output`
+Results will be saved to `./output`. If you encounte the error: `Function 'PowBackward0' returned nan values in its 0th output.` caused by the `File "XXX/anaconda3/envs/facednerf/lib/python3.9/site-packages/kornia/color/rgb.py", line 199, in rgb_to_linear_rgb`, please replace the line 199 code: `lin_rgb: torch.Tensor = torch.where(image > 0.04045, torch.pow(((image + 0.055) / 1.055), 2.4), image / 12.92)` with `lin_rgb: torch.Tensor = torch.where(image > 0.04045, torch.pow(((image.abs() + 0.055) / 1.055), 2.4), image / 12.92)`.Since the `.abs()` function is added to ensure that the base number is positive, the torch.power function becomes differentiable, and the gradients can be passed through it.
 
 ## Relight images
 we have provided some illumination functions `getLightIntensity`in the file `./editors/w_plus_editor.py`. If you want to customize you own illumination function, pleace also name it `getLightIntensity` and replace the original one.
