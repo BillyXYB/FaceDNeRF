@@ -43,8 +43,8 @@ https://github.com/BillyXYB/FDNeRF/assets/49705209/caf123ce-a63a-4692-beed-be685
 ## Requirements
 
 * We recommend Linux for performance and compatibility reasons.
-* 1&ndash;2 high-end NVIDIA GPUs. We have done all testing and development using V100, RTX3090, and RTX4090 GPUs.
-* 64-bit Python 3.9 and PyTorch 1.11.0 (or later). See https://pytorch.org for PyTorch install instructions.
+* 1&ndash;2 high-end NVIDIA GPUs. We have done all testing and development using V100s and RTX3090s.
+* 64-bit Python 3.9, cuda11.3, and PyTorch 1.11.0 (or later). See https://pytorch.org for PyTorch install instructions.
 * Since we use the EG3D as our backbone, Please see **[eg3d](https://github.com/NVlabs/eg3d)** official repo for EG3D installation. Or directly install following conda environment.
 * Python libraries: see [environment.yml](./environment.yml) for exact library dependencies.  You can use the following commands with Anaconda3 to create and activate your Python environment:
   - `cd FaceDNeRF`
@@ -63,6 +63,7 @@ We also provide test data in the `./test_data`
 ```
 wget --content-disposition 'https://api.ngc.nvidia.com/v2/models/org/nvidia/team/research/eg3d/1/files?redirect=true&path=ffhqrebalanced512-128.pkl' -O ffhqrebalanced512-128.pkl
 ```
+3. The ArcFace facial recognition network is used in the ID loss. The weights can be downloaded from [here](https://drive.google.com/file/d/1KW7bjndL3QG3sxBbZxreGHigcCCpsDgn/view?usp=sharing).
 
 ## Image editing
 The backnone of this implementation is [eg3d](https://github.com/NVlabs/eg3d). For detailed instructions, please refer to the comments in the  `./script.py`

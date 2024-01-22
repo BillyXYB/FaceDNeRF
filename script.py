@@ -6,7 +6,7 @@ gpu_id1 = 0
 gpu_id2 = 1 
 num_steps = 1000
 num_steps_pti = 400
-s
+
 #### For the hyper-parameters, please refer to the paper to adjust them. Generally, a higher value means a higher stength of the corresponding control. ####
 image_ids = ["00018"]  
 input_dict = [{"text": "A woman wearing a pair of glasses", "lamda_id": 0.4, "lamda_origin": 0.4,  "lamda_diffusion": 2.1e-5, "lamda_illumination":0.0},
