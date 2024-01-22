@@ -36,8 +36,6 @@ https://github.com/BillyXYB/FDNeRF/assets/49705209/e1c3fcef-7fe3-432f-b58c-60aa0
 
 
 
-
-
 ## Text-Condition Generation (include other domians)
 
 https://github.com/BillyXYB/FDNeRF/assets/49705209/caf123ce-a63a-4692-beed-be685d3b29a9
