@@ -11,7 +11,7 @@ num_steps_pti = 400
 image_ids = ["00018"]  
 input_dict = [{"text": "A woman wearing a pair of glasses", "lamda_id": 0.4, "lamda_origin": 0.4,  "lamda_diffusion": 2.1e-5, "lamda_illumination":0.0},
               {"text": "A woman wearing a pair of glasses", "lamda_id": 0.4, "lamda_origin": 0.4,  "lamda_diffusion": 2.1e-5, "lamda_illumination":0.03},
-              {"text": "", "lamda_id": 0.4, "lamda_origin": 0.4,  "lamda_diffusion": 0.0, "lamda_illumination":0.3},
+              {"text": "", "lamda_id": 0.4, "lamda_origin": 0.4,  "lamda_diffusion": 0.0, "lamda_illumination":0.03},
               {"text": "A young girl is about 15 years old", "lamda_id": 0.4, "lamda_origin": 0.4,  "lamda_diffusion": 2.1e-5, "lamda_illumination":0.0},
               {"text": "A old lady is about 60 years old", "lamda_id": 0.4, "lamda_origin": 0.4,  "lamda_diffusion": 2.1e-5, "lamda_illumination":0.0},
               ]
@@ -35,7 +35,7 @@ for image_id in image_ids:
         # time.sleep(600)
         print("End : %s" % time.ctime())
         ### generate result video
-        output_dir = os.path.join(output_dir, image_id+input_dict[i]["text"]+str(input_dict[i]["lamda_id"])+" "+str(input_dict[i]["lamda_origin"])+" "+str(input_dict[i]["lamda_diffusion"])+" "+str(input_dict[i]["lamda_illumination"]))
-        command = "CUDA_VISIBLE_DEVICES=" + str(gpu_id1)+" python gen_videos_from_given_latent_code.py --outdir='"+output_dir+"' --trunc=0.7 --npy_path '"+output_dir+"/checkpoints/"+image_id+".npy'   --network='"+output_dir+"/checkpoints/fintuned_generator.pkl' --sample_mult=2"
+        output_dir_video = os.path.join(output_dir, image_id+input_dict[i]["text"]+str(input_dict[i]["lamda_id"])+" "+str(input_dict[i]["lamda_origin"])+" "+str(input_dict[i]["lamda_diffusion"])+" "+str(input_dict[i]["lamda_illumination"]))
+        command = "CUDA_VISIBLE_DEVICES=" + str(gpu_id1)+" python gen_videos_from_given_latent_code.py --outdir='"+output_dir_video+"' --trunc=0.7 --npy_path '"+output_dir_video+"/checkpoints/"+image_id+".npy'   --network='"+output_dir_video+"/checkpoints/fintuned_generator.pkl' --sample_mult=2"
         print(command)
         os.system(command)
