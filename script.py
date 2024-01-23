@@ -10,8 +10,8 @@ num_steps_pti = 400
 #### For the hyper-parameters, please refer to the paper to adjust them. Generally, a higher value means a higher stength of the corresponding control. ####
 image_ids = ["00018"]  
 input_dict = [{"text": "A woman wearing a pair of glasses", "lamda_id": 0.4, "lamda_origin": 0.4,  "lamda_diffusion": 2.1e-5, "lamda_illumination":0.0},
-              {"text": "A woman wearing a pair of glasses", "lamda_id": 0.4, "lamda_origin": 0.4,  "lamda_diffusion": 2.1e-5, "lamda_illumination":0.03},
-              {"text": "", "lamda_id": 0.4, "lamda_origin": 0.4,  "lamda_diffusion": 0.0, "lamda_illumination":0.03},
+              {"text": "A woman wearing a pair of glasses", "lamda_id": 0.4, "lamda_origin": 0.4,  "lamda_diffusion": 2.1e-5, "lamda_illumination":0.01},
+              {"text": "", "lamda_id": 0.4, "lamda_origin": 0.4,  "lamda_diffusion": 0.0, "lamda_illumination":0.01},
               {"text": "A young girl is about 15 years old", "lamda_id": 0.4, "lamda_origin": 0.4,  "lamda_diffusion": 2.1e-5, "lamda_illumination":0.0},
               {"text": "A old lady is about 60 years old", "lamda_id": 0.4, "lamda_origin": 0.4,  "lamda_diffusion": 2.1e-5, "lamda_illumination":0.0},
               ]
