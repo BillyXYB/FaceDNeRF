@@ -83,12 +83,11 @@ Link to [**Paper**](https://arxiv.org/abs/2306.00783)
 If you find this work useful for your research, please cite our paper:
 
 ```bibtex
-@misc{zhang2023facednerf,
-      title={FaceDNeRF: Semantics-Driven Face Reconstruction, Prompt Editing and Relighting with Diffusion Models}, 
-      author={Hao Zhang and Yanbo Xu and Tianyuan Dai and Yu-Wing Tai and Chi-Keung Tang},
-      year={2023},
-      eprint={2306.00783},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{zhang2024facednerf,
+  title={FaceDNeRF: Semantics-Driven Face Reconstruction, Prompt Editing and Relighting with Diffusion Models},
+  author={Zhang, Hao and DAI, Tianyuan and Xu, Yanbo and Tai, Yu-Wing and Tang, Chi-Keung},
+  journal={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2024}
 }
 ```
